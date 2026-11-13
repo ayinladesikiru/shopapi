@@ -8,6 +8,19 @@ The project covers the main parts of an e-commerce backend: user accounts and ad
 
 ---
 
+## How to Use This Repo
+
+This is the **reference version** of the project we build together in class. Use it to compare against your own code and make sure you're up to date.
+
+- Each lesson's work is saved as one or more commits. Run `git log --oneline` to see them.
+- To see exactly what changed in a lesson, run `git show <commit-hash>`.
+- To see the whole project as it was at a given point, run `git checkout <commit-hash>`. Run `git checkout main` to come back to the latest version.
+- If your code differs from this repo, go with the version here, then ask in class if anything isn't clear.
+
+> The database settings in `shopapi/settings.py` are placeholders on purpose. Fill in your own PostgreSQL details (see [Getting Started](#getting-started)).
+
+---
+
 ## Tech Stack
 
 | Tool | Purpose |

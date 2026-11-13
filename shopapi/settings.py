@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'accounts',
+    'catalog',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -74,8 +78,12 @@ WSGI_APPLICATION = 'shopapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql', # postgresql should mysql if you are using mysql database
+        'NAME': "your db name",
+        'USER': "your db user",
+        'PASSWORD': "your db password",
+        'HOST': "your db host",
+        'PORT': "your db port",
     }
 }
 
@@ -125,3 +133,5 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+AUTH_USER_MODEL = 'accounts.User'

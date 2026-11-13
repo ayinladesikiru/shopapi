@@ -21,7 +21,7 @@ class Address(models.Model):
     ]
 
     user = models.ForeignKey(User, related_name="addresses", on_delete=models.CASCADE)
-    label = models.CharField(max_length=10, choices=LabelChoices, default="HOME", blank=True)
+    label = models.CharField(max_length=10, choices=LabelChoices, default="home", blank=True)
     recipient_name = models.CharField(max_length=100, blank=False, null=False)
     phone = models.CharField(max_length=15, blank=False)
     line1 = models.CharField(max_length=255, blank=False, null=False)

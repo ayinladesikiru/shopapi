@@ -1,7 +1,7 @@
 [project]
 name = "shopapi"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Django REST Framework backend for an online shop, built as a class project for learning Django."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

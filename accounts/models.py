@@ -4,7 +4,7 @@ from django.db import models
 
 class User(AbstractUser):
     email = models.EmailField(unique=True)
-    phone = models.CharField(max_length=15, blank=False, null=False)
+    phone = models.CharField(max_length=15, blank=False, null=False, unique=True)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
